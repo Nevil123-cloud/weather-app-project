@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/cerulean/bootstrap.min.css"
         integrity="sha512-dQLT/B7byn2LjN/DN4zeBKpwGV6qbidV0XiMRWQOL7TGrV7FkZFldkGG+DGMU+CQnMTcRZlUI7GMWt1j6akNew=="
         crossorigin="anonymous" />
-    <title>Document</title>
+    <title>Weather App by Egita Nevil</title>
 </head>
 
 <body>
     <h1>Hello world</h1>
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container">
-            <a href="../" class="navbar-brand">Weather App <span style="color: rgb(39, 117, 161);"> <strong> - Django
-                        Framework</strong>
+            <a href="../" class="navbar-brand">Weather App <span style="color: rgb(39, 117, 161);"> <strong> - by Egita Nevil</strong>
                 </span> </a>
             <a href="https://openweathermap.org" class="navbar-tech">OpenWeather - Get Your API</a>
         </div>
@@ -31,7 +30,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <form method="post" class="col-md"">
+        <form method="post" class="col-md">
           {% csrf_token %}
           <div class=" input-group">
 
@@ -53,7 +52,7 @@
                 <h4><span class="badge badge-primary">Temperature in Celsius :</span> {{temp}}</h4>
                 <h4><span class="badge badge-primary">Pressure :</span> {{pressure}} </h4>
                 <h4><span class="badge badge-primary">Humidity : </span> {{humidity}}</h4>
-                <h4><span class="badge badge-primary">Forecast : </span> {{main}} <img
+<h4><span class="badge badge-primary">Forecast : </span> {{tracked}} <img
                         src="http://openweathermap.org/img/w/{{icon}}.png" alt="Image" style="width:70px"></h4>
                 <h4><span class="badge badge-primary">Description : </span> {{description}}</h4>
             </div>
